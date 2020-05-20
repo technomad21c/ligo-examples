@@ -16,4 +16,16 @@ function convert_str_to_address (const str : string) : address is
     const key : address = ( "tz1gjaF81ZRRvdzjobyfVNsAeSC6PScjfQwN" : address)
   } with key
 
-  
+function test (const m : string) :string is  "OK!"
+
+type buy is
+  record [
+    profile : bytes;
+  ]
+
+function buy (const p : bytes ) : bytes is 
+  block {
+    const ret : bytes = p
+  } with ret
+
+
