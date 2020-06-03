@@ -69,3 +69,5 @@ type action is
    | Skip of unit
 
 function actiontest (const act : action) : string is "OK!"
+
+const myamount : tez = Tezos.amount
