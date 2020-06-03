@@ -1,0 +1,4 @@
+# dune build @install
+# OCAMLPARAM: unset
+$ /usr/bin/nproc > /tmp/dune8ce7f2.output 2> /dev/null
+$ /home/brandon/Dev/05_ligo/ligo/_opam/bin/ocamlc.opt -config > /tmp/dunef0d741.output

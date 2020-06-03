@@ -1,0 +1,8 @@
+;; this declares the hello_world executable implemented by hello_world.ml
+(executables
+  (names main)
+  (libraries mylib))
+
+(install
+  (section bin)
+  (files main.exe))

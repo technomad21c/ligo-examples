@@ -1,0 +1,6 @@
+2020-05-28T00:09:43+00:00 pop-os#01 I: Start test suite:0:test1.
+2020-05-28T00:09:43+00:00 pop-os#01 E: Test suite:0:test1 has failed.
+2020-05-28T00:09:43+00:00 pop-os#01 E: not equal in test suite:0:test1.
+2020-05-28T00:09:43+00:00 pop-os#01 E: Called from unknown location
+2020-05-28T00:09:43+00:00 pop-os#01 E: 
+2020-05-28T00:09:43+00:00 pop-os#01 I: End test suite:0:test1.

@@ -1,0 +1,8 @@
+(executable
+  (name brandon)
+  (libraries lib))
+
+(install
+  (section bin)
+  (files brandon.exe))
+

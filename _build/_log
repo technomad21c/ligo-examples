@@ -1,0 +1,16 @@
+### Starting build.
+# Target: test_hashlock.ml.depends, tags: { extension:ml, file:test_hashlock.ml, ocaml, ocamldep, quiet }
+/home/brandon/Dev/05_ligo/ligo/_opam/bin/ocamldep.opt -modules test_hashlock.ml > test_hashlock.ml.depends
+# Target: foo.ml.depends, tags: { extension:ml, file:foo.ml, ocaml, ocamldep, quiet }
+/home/brandon/Dev/05_ligo/ligo/_opam/bin/ocamldep.opt -modules foo.ml > foo.ml.depends # cached
+# Target: foo.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:foo.cmo, file:foo.ml, implem, ocaml, quiet }
+/home/brandon/Dev/05_ligo/ligo/_opam/bin/ocamlc.opt -c -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/bytes -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/oUnit -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/ocaml -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/ounit2 -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/ounit2/advanced -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/stdlib-shims -o foo.cmo foo.ml # cached
+# Target: trace.ml.depends, tags: { extension:ml, file:trace.ml, ocaml, ocamldep, quiet }
+/home/brandon/Dev/05_ligo/ligo/_opam/bin/ocamldep.opt -modules trace.ml > trace.ml.depends
+# Target: trace.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:trace.cmo, file:trace.ml, implem, ocaml, quiet }
+/home/brandon/Dev/05_ligo/ligo/_opam/bin/ocamlc.opt -c -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/bytes -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/oUnit -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/ocaml -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/ounit2 -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/ounit2/advanced -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/stdlib-shims -o trace.cmo trace.ml
++ /home/brandon/Dev/05_ligo/ligo/_opam/bin/ocamlc.opt -c -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/bytes -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/oUnit -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/ocaml -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/ounit2 -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/ounit2/advanced -I /home/brandon/Dev/05_ligo/ligo/_opam/lib/stdlib-shims -o trace.cmo trace.ml
+File "trace.ml", line 1, characters 8-26:
+Error: Unbound module Simple_utils
+Command exited with code 2.
+# Compilation unsuccessful.

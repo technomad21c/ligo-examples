@@ -1,0 +1,16 @@
+lib: [
+  "_build/install/default/lib/mylib/META"
+  "_build/install/default/lib/mylib/dune-package"
+  "_build/install/default/lib/mylib/mylib.a"
+  "_build/install/default/lib/mylib/mylib.cma"
+  "_build/install/default/lib/mylib/mylib.cmi"
+  "_build/install/default/lib/mylib/mylib.cmt"
+  "_build/install/default/lib/mylib/mylib.cmx"
+  "_build/install/default/lib/mylib/mylib.cmxa"
+  "_build/install/default/lib/mylib/mylib.cmxs"
+  "_build/install/default/lib/mylib/mylib.ml"
+  "_build/install/default/lib/mylib/opam"
+]
+bin: [
+  "_build/install/default/bin/main.exe"
+]

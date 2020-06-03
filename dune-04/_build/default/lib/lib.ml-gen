@@ -1,0 +1,5 @@
+(** @canonical Lib.Hello *)
+module Hello = Lib__Hello
+
+(** @canonical Lib.Math *)
+module Math = Lib__Math

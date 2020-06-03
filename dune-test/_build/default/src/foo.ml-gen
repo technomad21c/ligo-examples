@@ -1,0 +1,2 @@
+(** @canonical Foo.Fact *)
+module Fact = Foo__Fact

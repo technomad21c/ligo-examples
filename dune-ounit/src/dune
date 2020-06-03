@@ -1,0 +1,4 @@
+(executable
+  (name brandon)
+  (libraries lib simple-utils proto-alpha-utils))
+

@@ -1,0 +1,6 @@
+2020-05-27T23:47:08+00:00 pop-os#02 I: Start test test suite for sum:1:one.
+2020-05-27T23:47:08+00:00 pop-os#02 E: Test test suite for sum:1:one has failed.
+2020-05-27T23:47:08+00:00 pop-os#02 E: not equal in test test suite for sum:1:one.
+2020-05-27T23:47:08+00:00 pop-os#02 E: Called from unknown location
+2020-05-27T23:47:08+00:00 pop-os#02 E: 
+2020-05-27T23:47:08+00:00 pop-os#02 I: End test test suite for sum:1:one.

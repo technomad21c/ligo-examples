@@ -1,0 +1,13 @@
+(lang dune 1.11)
+(name mylib)
+(version 1.0)
+(library
+ (name mylib)
+ (kind normal)
+ (archives (byte mylib.cma) (native mylib.cmxa))
+ (plugins (byte mylib.cma) (native mylib.cmxs))
+ (foreign_archives (native mylib.a))
+ (main_module_name Mylib)
+ (modes byte native)
+ (modules
+  (singleton (name Mylib) (obj_name mylib) (visibility public) (impl))))

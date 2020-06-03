@@ -1,0 +1,3 @@
+(test
+  (name mylib_test)
+  (libraries lib))

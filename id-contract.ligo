@@ -61,11 +61,12 @@ function buytest (const parameter : buy) : string is "OK!"
 function storagetest (const strg : storage) : string is "OK!"
 function actiontest (const act : action) : string is "OK!"
 
+
 function buy (const parameter : buy; const storage : storage) : list(operation) * storage is
   begin
     if amount = storage.name_price
     then skip
-    else failwith("Incorrect amount paid.");
+    else failwith("Incorrect amount paid.***");
     const profile : bytes = parameter.profile;
     const initial_controller : option(address) = parameter.initial_controller;
     var identities : big_map (id, id_details) := storage.identities;

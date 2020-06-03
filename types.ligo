@@ -1,3 +1,5 @@
+const date : timestamp = ("2020-05-29T11:22:33Z" : timestamp);
+
 function test (const m : string) :string is  "OK!"
 
 type prof is

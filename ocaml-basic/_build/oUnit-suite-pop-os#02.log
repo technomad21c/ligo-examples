@@ -1,0 +1,6 @@
+2020-05-28T04:03:51+00:00 pop-os#02 I: Start test suite:1:test2.
+2020-05-28T04:03:51+00:00 pop-os#02 E: Test suite:1:test2 has failed.
+2020-05-28T04:03:51+00:00 pop-os#02 E: expected: 10 but got: 100 in test suite:1:test2.
+2020-05-28T04:03:51+00:00 pop-os#02 E: Called from unknown location
+2020-05-28T04:03:51+00:00 pop-os#02 E: 
+2020-05-28T04:03:51+00:00 pop-os#02 I: End test suite:1:test2.

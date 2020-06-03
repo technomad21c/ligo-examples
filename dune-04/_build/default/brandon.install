@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/brandon/META"
+  "_build/install/default/lib/brandon/dune-package"
+  "_build/install/default/lib/brandon/opam"
+]
+bin: [
+  "_build/install/default/bin/brandon.exe"
+]
