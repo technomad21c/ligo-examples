@@ -44,6 +44,7 @@ function test_nat (const p : nat) : string is "Parameter(nat) OK!"
 function test_transfer (const t : transfer) : string is "Parameter(transfer) OK!"
 function test_tokens (const t : tokens) : string is "Parameter(tokens) OK!"
 function test_allowances (const a : allowances) : string is "Parameter(allowances) OK!"
+function test_storage (const s : storage) : string is "Parameter(storage) OK!"
 
 function transfer (const p : transfer; const s: storage) : list (operation) * storage is block {
    var new_allowances : allowances := Big_map.empty;
@@ -53,10 +54,10 @@ function transfer (const p : transfer; const s: storage) : list (operation) * st
 		var authorized_value : nat := 
 		case (Big_map.find_opt ((Tezos.sender,p.address_from), s.allowances)) of
 				Some (value) -> value
-			|	None       -> 0n
+			|	None       -> 100n
 		end;
 		if (authorized_value < p.value)
-		then { failwith("Not Enough Allowance")}
+		then { failwith("Not Enough Allowance - a")}
 		else { new_allowances := Big_map.update ((Tezos.sender,p.address_from), (Some (abs(authorized_value - p.value))), s.allowances) }    
 	};
 	var sender_balance : nat := case (Big_map.find_opt (p.address_from, s.tokens)) of
