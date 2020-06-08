@@ -21,13 +21,20 @@ end
 
 const senderAmount : amt = 100n
 
+function force_access (const key : address; const allowances : (address, amt) ): amt is
+  case allowances[key] of
+    Some (amt) -> amt
+  | None -> (failwith ("No account!") : allowances)
+  end
+
 function isAllowed ( const src : address ; const value : amt ; var s : contract_storage) : bool is 
   begin
     var allowed: bool := False;
     if sender =/= source then block {
-      const src: account = get_force(src, s.ledger);      
+      const sender: account = get_force(src, s.ledger);      
       // const allowanceAmount: amt = get_force(sender, src.allowances);
-      const allowanceAmount : amt = senderAmount;  // just for demonstration.
+      // const allowanceAmount : amt = senderAmount;  // just for demonstration.
+         const allowanceAmount : amt = force_access(src, src.allowances);
       allowed := allowanceAmount >= value;
     };
     else allowed := True;

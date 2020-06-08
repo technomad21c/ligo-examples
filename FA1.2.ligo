@@ -101,10 +101,11 @@ function transfer (const p : transfer; const s: storage) : list (operation) * st
     then { new_allowances := s.allowances; }
     else {
         var authorized_value : nat := 
-        case (Big_map.find_opt ((Tezos.sender,p.address_from), s.allowances)) of
+        case s.allowances[(Tezos.sender,p.address_from)] of
+        // case (Big_map.find_opt ((Tezos.sender,p.address_from), s.allowances)) of
                 Some (value) -> value                        
-            (* |	None       -> 0n *)
-            |    None       -> 100n  (* just for web ide demonstration *)
+             |	None       -> 0n
+            // |    None       -> 100n  (* just for web ide demonstration *)
         end;
         if (authorized_value < p.value)
         then { failwith("Not Enough Allowance")}
